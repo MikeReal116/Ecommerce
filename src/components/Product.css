@@ -1,0 +1,28 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.product__image{
+    background-color: #eaebeb;
+    margin-bottom: 12px;
+}
+.product__image > img{
+    max-width: 400px;
+    max-height: 4000px;
+}
+.product__name{
+    font-size: 24px;
+    color: #4f545a;
+    margin-bottom: 12px;
+}
+.product__price{
+    font-size: 18px;
+    color: #2d333a;
+    margin-bottom: 12px;
+}
+.product > Button{
+    width: 80%;
+}
