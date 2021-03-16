@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 }
 
 .herosection__content-description {
@@ -30,9 +29,11 @@
 }
 .herosection__image > img{
     width: 100%;
-    max-height: calc(100vh - 121px);
-  
+    height: calc(100vh - 121px);
 }
-.herosection__content > Button{
-    width: 20%;
+.herosection__cover{
+    object-fit:fill;
+}
+.herosection__content  Button{
+  width: 180px;
 }

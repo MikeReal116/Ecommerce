@@ -1,0 +1,13 @@
+.productlist{
+    display: flex;
+    padding:  55px 35px;
+
+}
+.productlist__product{
+    flex: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productlist__cart{
+    flex: 25%;
+}

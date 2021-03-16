@@ -5,9 +5,10 @@
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 5px;
+    cursor: pointer;
 }
 .primary{
-
+    background-color: rgb(113, 161, 17);
 }
 .outline{
     background: transparent;
@@ -15,4 +16,28 @@
 .green{
     border:1px solid white;
     color: white;
+    transition: all .2s ease-out;
+}
+.green:hover{
+    background-color: white;
+    color: #010101;
+}
+.green-2{
+    border:1px solid white;
+    color: white;
+    transition: all .2s ease-out;
+}
+.green-2:hover{
+    background-color: #2d333a;
+}
+.cart{
+   
+    background-color: #292e34;
+}
+.gray{
+    padding: 24px 36px;
+    color: white;
+}
+.gray:hover{
+    background-color: #001;
 }
