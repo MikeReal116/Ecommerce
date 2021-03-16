@@ -1,6 +1,6 @@
 import React from 'react'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
-import logo from "../images/logo.png";
+import logo from "../images/logo.jpg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
                 <img src={logo} alt="logo"/>
             </div>
             <div className="navbar__shopping">
-                <a href="">Trade</a>
+                <a href="#">Trade</a>
                 <AddShoppingCartIcon />
             </div>
         </div>

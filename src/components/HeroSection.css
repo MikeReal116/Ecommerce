@@ -1,0 +1,38 @@
+.herosection{
+    display: flex;
+    height: calc(100vh - 121px);
+}
+.herosection__content{
+    flex:50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0 80px;
+    color: white;
+    background-color: #39625C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.herosection__content-description {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+.herosection__content-title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.herosection__image{
+    max-width: 50%;
+}
+.herosection__image > img{
+    width: 100%;
+    max-height: calc(100vh - 121px);
+  
+}
+.herosection__content > Button{
+    width: 20%;
+}

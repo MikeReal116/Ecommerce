@@ -1,0 +1,18 @@
+.btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 18px 26px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.primary{
+
+}
+.outline{
+    background: transparent;
+}
+.green{
+    border:1px solid white;
+    color: white;
+}
