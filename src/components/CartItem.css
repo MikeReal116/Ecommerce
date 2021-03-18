@@ -1,0 +1,24 @@
+.cartitem{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+.cartitem__image{
+    padding-right: 10px;
+}
+.cartitem__image > img{
+    width: 120px;
+}
+.cartitem__detail > p {
+    margin-bottom: 5px;
+}
+
+.cartitem__name{
+    color: #2d333a;
+    font-size: 24px;
+}
+.cartitem__price{
+    color: #2d333a;
+    font-size: 18px;
+}

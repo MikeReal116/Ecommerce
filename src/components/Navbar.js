@@ -1,11 +1,12 @@
 import React from 'react'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import  { IconButton } from "@material-ui/core";
+import { connect } from "react-redux"
 import { Link } from "react-router-dom";
 import logo from "../images/logo.jpg";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className="navbar">
             <div className="navbar__link">
@@ -18,12 +19,18 @@ const Navbar = () => {
             </div>
             <div className="navbar__shopping">
                 <Link to ="" className="navbar__item">Trade</Link>
-                <IconButton>
-                    <AddShoppingCartIcon />
-                </IconButton>
+                <div className="navbar__shopping-cart">
+                    <IconButton>
+                        <AddShoppingCartIcon />
+                    </IconButton>
+                    {props.cart.length!==0&& <span className="cart-icon">{props.cart.length}</span>}
+                </div>
+                
             </div>
         </div>
     )
 }
-
-export default Navbar
+const mapStateToProps = (state) => {
+    return {cart:state.carts}
+}
+export default connect(mapStateToProps)(Navbar)
