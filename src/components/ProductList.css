@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .productlist__cart-total > p{
     color: #2d333a;
@@ -25,6 +26,6 @@
     font-weight: 600;
     margin-bottom: 5px;
 }
-.productlist__cart-total > Button{
-    width: 80%;
+.productlist__cart-total Button {
+    width: 250px;
 }

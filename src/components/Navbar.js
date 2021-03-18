@@ -20,10 +20,11 @@ const Navbar = (props) => {
             <div className="navbar__shopping">
                 <Link to ="" className="navbar__item">Trade</Link>
                 <div className="navbar__shopping-cart">
-                    <IconButton>
+                    <Link to="/checkout"><IconButton>
                         <AddShoppingCartIcon />
                     </IconButton>
                     {props.cart.length!==0&& <span className="cart-icon">{props.cart.length}</span>}
+                    </Link>
                 </div>
                 
             </div>

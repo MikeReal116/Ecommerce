@@ -5,6 +5,7 @@ import './App.css';
 import HeroSection from "./HeroSection";
 import AddProduct from "./AddProduct";
 import ProductList from "./ProductList";
+import Checkout from "./Checkout";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact component={HeroSection}/>
           <Route path ="/shop/addproduct" exact component= {AddProduct}/>
           <Route path="/shop" exact component={ProductList} />
+          <Route path="/checkout" exact component ={Checkout} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -20,6 +20,7 @@ const AddProduct = () => {
         }
         else{
             setError("Please choose a valid image of type jpg or png");
+            alert(error)
         }
     }
 
