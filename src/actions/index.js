@@ -27,3 +27,16 @@ export const removeFromCart = (product) => (dispatch,getState) => {
     const cartItem = getState().carts.slice().filter(item => item.id !==product.id)
     dispatch({type:"REMOVE_FROM_CART", payload:cartItem})
 }
+
+export const createOrder = (order) => dispatch => {
+    db.collection("orders").add(order);
+    dispatch({type:"CREATE_ORDER" , payload: order});
+}
+
+export const clearCart = () => (dispatch) =>{
+    dispatch({type:"CLEAR_CART"})
+}
+
+export const clearOrder = () => dispatch =>{
+    dispatch({type:"CLEAR_ORDER"});
+}

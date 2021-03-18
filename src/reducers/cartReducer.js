@@ -4,6 +4,8 @@ const cartReducer = (state=[], action) =>{
             return action.payload.cartItem;
         case "REMOVE_FROM_CART":
             return action.payload;
+        case "CLEAR_CART":
+            return [];
         default:
             return state;
     }
