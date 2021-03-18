@@ -56,4 +56,16 @@
     display: flex;
     color: #2d333a;
 }
-
+.navbar__shopping-cart{
+    position: relative;
+}
+.cart-icon{
+    color: white;
+    font-size: 12px;
+    background-color: #2d333a;
+    padding: 3px 8px;
+    border-radius: 100px;
+    font-weight: 500;
+    position: absolute;
+    right: -10px;
+}

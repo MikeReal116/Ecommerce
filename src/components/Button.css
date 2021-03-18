@@ -41,3 +41,13 @@
 .gray:hover{
     background-color: #001;
 }
+.black{
+    padding: 8px 20px;
+    color: #000;
+    border: 1px solid #000;
+    transition: all .2s ease-out;
+}
+.black:hover{
+    background-color:#000;
+    color: white;
+}
