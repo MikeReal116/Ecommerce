@@ -98,49 +98,51 @@ const Checkout = (props) => {
             </div>
             {
                 modal &&
-                <Modal isOpen={true} onRequestClose={closeModal} ariaHideApp={false}>
-                <button onClick={()=> {props.clearCart() ; closeModal()}} className="modal__close"> x </button>
-                    <div className="modal">
-                        {
-                            <ul className="modal__list">
-                                    <li className="header">
-                                        <div>Thank You For Your Order</div>
-                                            <div className="active">  </div>
-                                    </li>
-                                    <li>
-                                        <div>Order Detail:</div>
-                                        <div >{props.order.cartItem.map(x=>{
-                                            return <div key={x.id}className="active">{x.count} {"X"} {x.data.productName} </div>
-                                        })}</div>
-                                    </li>
-                                    <li>
-                                        <div >Total:</div>
-                                        <div className="active">{props.order.total}</div>
-                                    </li>
-                                    <li>
-                                        <div >Email</div>
-                                        <div className="active">{props.order.email}</div>
-                                    </li>
-                                    <li>
-                                        <div >Name:</div>
-                                        <div className="active">{props.order.firstname} {"  "} {props.order.lastname}</div>
-                                    </li>
-                                    <li>
-                                        <div>Address:</div>
-                                        <div className="active">{props.order.address} {" "} {props.order.postcode}</div>
-                                    </li>
-                                    <li>
-                                        <div>Town:</div>
-                                        <div className="active">{props.order.town}</div>
-                                    </li>
-                                    <li>
-                                        <div>Country:</div>
-                                        <div className="active" >{props.order.country}</div>
-                                    </li>
-                            </ul>
-                        }
-                    </div>
-                </Modal> 
+                <Zoom>
+                    <Modal isOpen={true} onRequestClose={closeModal} ariaHideApp={false}>
+                    <button onClick={()=> {props.clearCart() ; closeModal()}} className="modal__close"> x </button>
+                        <div className="modal">
+                            {
+                                <ul className="modal__list">
+                                        <li className="header">
+                                            <div>Thank You For Your Order</div>
+                                                <div className="active">  </div>
+                                        </li>
+                                        <li>
+                                            <div>Order Detail:</div>
+                                            <div >{props.order.cartItem.map(x=>{
+                                                return <div key={x.id}className="active">{x.count} {"X"} {x.data.productName} </div>
+                                            })}</div>
+                                        </li>
+                                        <li>
+                                            <div >Total:</div>
+                                            <div className="active">{props.order.total}</div>
+                                        </li>
+                                        <li>
+                                            <div >Email</div>
+                                            <div className="active">{props.order.email}</div>
+                                        </li>
+                                        <li>
+                                            <div >Name:</div>
+                                            <div className="active">{props.order.firstname} {"  "} {props.order.lastname}</div>
+                                        </li>
+                                        <li>
+                                            <div>Address:</div>
+                                            <div className="active">{props.order.address} {" "} {props.order.postcode}</div>
+                                        </li>
+                                        <li>
+                                            <div>Town:</div>
+                                            <div className="active">{props.order.town}</div>
+                                        </li>
+                                        <li>
+                                            <div>Country:</div>
+                                            <div className="active" >{props.order.country}</div>
+                                        </li>
+                                </ul>
+                            }
+                        </div>
+                    </Modal> 
+                </Zoom>
             }
             {props.carts.length!==0?null: <Redirect to ="/shop" />}
         </div>
