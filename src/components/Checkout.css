@@ -85,3 +85,33 @@ body{
     font-weight: 600;
     margin-bottom: 5px;
 }
+
+.modal{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+    z-index: 2;
+    
+}
+.modal__list li{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.active{
+    margin-left: 50px;
+}
+.header{
+    color: green;
+    padding-bottom: 20px;
+}
+.modal__close{
+    text-align: right;
+    padding: 12px;
+    color:white;
+    background-color: tomato;
+}
