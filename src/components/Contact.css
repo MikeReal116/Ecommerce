@@ -1,0 +1,20 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    height: calc(100vh - 121px);
+}
+.contact > div{
+    font-size: 40px;
+    font-weight: 300;
+    color: #2d333a;
+}
+.contact > p{
+    font-size: 14px;
+    color: #2d333a;
+    padding-top: 10px;
+    line-height: 23px;
+}

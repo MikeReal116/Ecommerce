@@ -11,14 +11,14 @@ const Navbar = (props) => {
         <div className="navbar">
             <div className="navbar__link">
                 <Link to="/shop" className="navbar__item">Shop</Link>
-                <Link to="" className="navbar__item">About</Link>
-                <Link to ="" className="navbar__item">Contact</Link>
+                <Link to="/about" className="navbar__item">About</Link>
+                <Link to ="/contact" className="navbar__item">Contact</Link>
             </div>
             <div className="navbar__logo">
                 <Link to="/"><img src={logo} alt="logo" className="navbar__logo-image"/></Link>
             </div>
             <div className="navbar__shopping">
-                <Link to ="" className="navbar__item">Trade</Link>
+                <Link to ="/admin" className="navbar__item">Admin</Link>
                 <div className="navbar__shopping-cart">
                     <Link to="/checkout"><IconButton>
                         <AddShoppingCartIcon />

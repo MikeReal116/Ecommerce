@@ -1,0 +1,16 @@
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+.admin{
+    padding: 55px;
+}
+.admin > table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}

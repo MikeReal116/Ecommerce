@@ -9,8 +9,10 @@ const HeroSection = () => {
     return (
         <div className = "herosection">
             <div className="herosection__content">
-                <p className="herosection__content-title">We are mysaa</p>
-                <p className= "herosection__content-description">The only skincare products <br></br> you're ever going to need</p>
+                <Fade top>
+                    <p className="herosection__content-title">We are mysaa</p>
+                    <p className= "herosection__content-description">The only skincare products <br></br> you're ever going to need</p>
+                </Fade>
                 <Fade bottom><Link to="/shop"><Button buttonStyle="outline" buttonColor="green-2">View Products</Button></Link></Fade>
             </div>
             <div className="herosection__image">

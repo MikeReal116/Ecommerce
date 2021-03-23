@@ -3,6 +3,8 @@ import { Button } from "./Button";
 import { storage } from "../firebase";
 import db from "../firebase";
 import "./AddProduct.css";
+import { Link } from 'react-router-dom';
+import history from "../history";
 
 const AddProduct = () => {
     const [productName, setProductName] = useState("");
@@ -50,6 +52,7 @@ const AddProduct = () => {
                 });
             }
         );
+        history.push("/shop");
     }
 
     return (
@@ -64,7 +67,7 @@ const AddProduct = () => {
                 <input type="text" required onChange={e => setProductDescription(e.target.value)} value={productDescription}/>
                 <label htmlFor="product-image">Product Image</label>
                 <input type="file" onChange={handleImage} id="file"/>
-                <Button buttonStyle="primary" buttonColor="green-2">Add Product</Button>
+                <Link to="/shop/addproduct"><Button buttonStyle="primary" buttonColor="green-2">Add Product</Button></Link>
             </form>
         </div>
     )
