@@ -40,3 +40,10 @@ export const clearCart = () => (dispatch) =>{
 export const clearOrder = () => dispatch =>{
     dispatch({type:"CLEAR_ORDER"});
 }
+
+export const fetchOrders = () => dispatch =>{
+    db.collection("orders").onSnapshot(snapshot=>{
+        const response=snapshot.docs.map(doc=>({id:doc.id, data:doc.data()}))
+        dispatch({type:"FETCH_ORDERS", payload:response });
+    });
+}

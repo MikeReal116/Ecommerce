@@ -1,0 +1,35 @@
+.about{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    height: calc(100vh - 121px);
+}
+.about__description{
+    background-color: #adafa9;
+    color: #fff;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about__description-heading{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 50%;
+    padding-bottom: 10px;
+}
+.about__description-text{
+    font-size: 40px;
+    font-weight: 400;
+    max-width: 50%;
+}
+.about__image{
+    flex: 50%;
+    max-width: 50%;
+}
+.about__image > img{
+    object-fit: fill;
+    width: 100%;
+    height: calc(100vh - 121px);
+}
