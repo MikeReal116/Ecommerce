@@ -12,7 +12,7 @@
 }
 .product__image > img{
     max-width: 400px;
-    max-height: 4000px;
+    max-height: 400px;
 }
 
 .product__name{
@@ -27,4 +27,11 @@
 }
 .product > Button{
     width: 80%;
+}
+@media only screen and (max-width:700px){
+ 
+    .product__image >img{
+        max-width: 300px;
+        max-height: 300px;
+    }
 }

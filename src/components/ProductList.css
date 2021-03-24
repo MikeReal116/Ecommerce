@@ -29,3 +29,15 @@
 .productlist__cart-total Button {
     width: 250px;
 }
+@media only screen and (max-width:700px){
+    .productlist{
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .productlist__product{
+        margin-bottom: 20px;
+        flex: 1;
+    }
+}
