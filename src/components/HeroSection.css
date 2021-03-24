@@ -37,3 +37,29 @@
 .herosection__content  Button{
   width: 180px;
 }
+
+@media only screen and (max-width:700px){
+    .herosection{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .herosection__content{
+        padding: 20px;
+        flex:50%;
+    }
+    .herosection__content-description {
+        font-size: 28px;
+    }
+    .herosection__image{
+        min-width: 100%;
+        flex: 50%;
+        min-height: 0;
+        height: 100%;
+    }
+  
+    .herosection__image>img{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}

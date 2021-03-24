@@ -33,3 +33,27 @@
     width: 100%;
     height: calc(100vh - 121px);
 }
+@media only screen and (max-width:1000px){
+    .about__description-text{
+        font-size: 32px;
+        max-width: 60%;
+    }
+}
+@media only screen and (max-width:700px){
+    .about{
+        flex-direction: column;
+    }
+    .about__description-text{
+        font-size: 24px;
+        max-width: 95%;
+    }
+    .about__image{
+        min-height: 0;
+        height: 100%;
+        max-width: 100%;
+    }
+    .about__image>img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
